@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+  --verde: #3A6351;
+  --marrom: #5B3921;
+  --bege: #EAD7C3;
+  --verde-claro: #8AB17D;
+  --marrom-claro: #A47149;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background: rgb(7, 7, 7);
+    padding-inline: 16px;
+    position: fixed; 
+    top: 0;          
+    left: 0;         
+    width: 100%;     
+    z-index: 1000; 
+    height: 90px; 
+}
+
+.nav{
+    max-width: 1280px;
+    height: 90px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 50px;
+    font-style: normal;
+}
+
+.nav-list a {
+    font-size: 18px;
+    color: var(--bege);
+    padding-block: 16px;
+}
+
+.titulo{
+    margin-left: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    color: var(--bege);
+}
+
+.logo-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo {
+    max-width: 120px;
+    max-height: 120px;
+}
+
+
+.banner {
+    background: center / cover no-repeat;
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+
+}
+
+.banner video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* cobre toda a tela */
+}
+
+.inicio{
+    width: 60%;
+    height: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white; 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 999;
+    position: absolute; 
+    
+}
+
+.sobre {
+    width: auto;
+    height: 100vh;
+    background: center / cover no-repeat url(imgs/cafe_fundo.jpg);
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: 1;
+    padding: 20px;
+}
+
+.formulario {
+    height: 100vh;
+    background: var(--marrom-claro);
+}
+
+.produtos {
+    height: 100vh;
+    background: var(--verde-claro);
+}
+
+
+.texto {
+    background: rgba(255, 255, 255, 0.1);
+    width: 65%;
+    min-height: 60%;
+    margin-left: 10%;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+.texto h2 {
+    text-align: center;
+    margin: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    font-style: normal;
+    color: var(--bege);
+
+}
+
+.texto p {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    margin-inline: 30px;
+    font-family: "Outfit", sans-serif;
+    font-style: normal;
+    color: var(--bege);
+    text-align: justify;
+}
+
+.sobrenos img {
+    background-color: var(--verde);
+    min-width:55%;
+    min-height: 90%;
+    margin-left: 20%;
+    border-radius: 16px;
+
+}
+
+.img_sobre {
+    max-width: 45%;
+    max-height: 100%;
+    opacity: 98%;
+}
