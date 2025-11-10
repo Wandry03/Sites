@@ -266,3 +266,27 @@ input:valid + .labellnome{
     z-index: 3;
 }
 
+@media (max-width: 768px) {
+  .divcontato {
+    width: 90%;
+    height: auto;
+  }
+
+  .inputs input {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+    sobre {
+    flex-direction: column; /* empilha texto e imagem */
+    text-align: center;
+  }
+
+  .img_sobre {
+    max-width: 80%;
+}
+
+
+
