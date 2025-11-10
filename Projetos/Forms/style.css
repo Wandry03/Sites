@@ -9,6 +9,7 @@
   --bege: #EAD7C3;
   --verde-claro: #8AB17D;
   --marrom-claro: #A47149;
+  --azul: #10085c;
 }
 
 html {
@@ -19,7 +20,11 @@ html {
 a {
     text-decoration: none;
 }
-
+h1{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: var(--bege);
+}
 .header {
     background: rgb(7, 7, 7);
     padding-inline: 16px;
@@ -58,10 +63,8 @@ a {
 
 .titulo{
     margin-left: 24px;
-    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 20px;
-    font-style: normal;
     color: var(--bege);
 }
 
@@ -98,8 +101,8 @@ a {
 .inicio{
     width: 60%;
     height: 50%;
-    background: rgba(255, 255, 255, 0.1);
     border-radius: 16px;
+    background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: white; 
@@ -122,9 +125,15 @@ a {
     padding: 20px;
 }
 
-.formulario {
+.forms {
     height: 100vh;
-    background: var(--marrom-claro);
+    background: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Outfit", sans-serif;
+    font-style: normal;
+
 }
 
 .produtos {
@@ -145,14 +154,12 @@ a {
     -webkit-backdrop-filter: blur(16px);
 }
 
-.texto h2 {
+.texto h1 {
     text-align: center;
     margin: 15px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 40px;
     font-style: normal;
-    color: var(--bege);
 
 }
 
@@ -180,3 +187,82 @@ a {
     max-height: 100%;
     opacity: 98%;
 }
+
+.divcontato {
+    background: #111111;
+    width: 40%;
+    height: 600px;
+    color: white;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 10px;
+}
+
+.sendbutton {
+    background-color: var(--verde);
+    color: white;
+    margin: 10px;
+    height: 60px;
+    width: 180px;
+    border-radius: 5px;
+    border-style: hidden;
+    font-family: "Outfit", sans-serif;
+    font-size: 1.5em;
+}
+
+.inputs input {
+    color: #ffff;
+    background: transparent;
+    margin-top: 40px;
+    display: flex;
+    gap: 30px;
+    height: 50px;
+    width: 400px;
+    border: 2px solid #ffff;
+    border-radius: 5px;
+    font-size: 1.2em;
+    position: relative;
+    transition: 0.5s ease;
+    z-index: 2;
+    outline: none;
+    padding-left: 15px;
+}
+.entryarea {
+    position: relative;
+    height: 70px;
+    margin-top: 20px;
+    width: 420px;
+}
+
+
+.labellnome {
+    position: absolute;
+    font-size: 1.2em;
+    z-index: 1;
+    position: absolute;
+    top: 40%;      
+    left: 20px;
+    padding-inline: 5px;       
+    transform: translateY(-50%);
+    background-color: #111111;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+input:focus,
+input:valid{
+    border: 4px solid var(--verde);
+}
+
+input:focus + .labellnome,
+input:valid + .labellnome{
+    color: var(--verde);
+    transform: translate(-10px, -43px) scale(0.88);
+
+    z-index: 3;
+}
+
